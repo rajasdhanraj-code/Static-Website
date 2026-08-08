@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Solution | AI-Based Face Recognition Attendance System</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">🎓</div>
+        <div>
+          SmartAttend
+          <span class="brand-subtitle">SPPU SYBCA Field Work Project</span>
+        </div>
+      </a>
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle Navigation Menu">
+        ☰
+      </button>
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="problem.html" class="nav-link">Problem</a>
+        <a href="solution.html" class="nav-link active">Solution</a>
+        <a href="attendance.html" class="nav-link">Attendance</a>
+        <a href="about.html" class="nav-link">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <span class="page-header-badge">Technological Innovation</span>
+      <h1 class="page-header-title">Our Solution: AI Face Recognition Attendance</h1>
+      <p class="page-header-desc">
+        A smart, automated, computer-vision solution designed to streamline attendance recording and modernise educational administration.
+      </p>
+    </div>
+  </div>
+
+  <!-- Proposed System Intro -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="card" style="margin-bottom: 40px; border-top: 4px solid var(--primary-color);">
+        <h2 style="font-size: 1.4rem; color: var(--primary-color); margin-bottom: 12px;">
+          Proposed System Architecture
+        </h2>
+        <p class="card-text" style="font-size: 1.05rem; line-height: 1.6;">
+          The <strong>AI-Based Face Recognition Attendance System</strong> leverages camera feeds and artificial intelligence computer vision algorithms to detect and identify registered students in real-time. As students enter the classroom or pass by the camera sensor, their facial features are captured, processed, and matched against pre-enrolled facial database profiles to automatically record attendance with an accurate date and timestamp.
+        </p>
+      </div>
+
+      <!-- How It Works (5 Sequential Steps) -->
+      <h2 class="section-title">How It Works</h2>
+      <p class="section-subtitle">Five core steps explaining the automated recognition workflow.</p>
+
+      <div class="sequential-steps">
+        <!-- Step 1 -->
+        <div class="step-card">
+          <div class="step-badge">1</div>
+          <div class="step-details">
+            <h4>Student Registration</h4>
+            <p>Student details (Roll No, Name, Department) and reference facial image embeddings are enrolled into the system database.</p>
+          </div>
+        </div>
+
+        <div class="down-arrow-divider">↓</div>
+
+        <!-- Step 2 -->
+        <div class="step-card">
+          <div class="step-badge">2</div>
+          <div class="step-details">
+            <h4>Face Detection</h4>
+            <p>The classroom camera stream captures live video frames and detects student faces using object detection algorithms.</p>
+          </div>
+        </div>
+
+        <div class="down-arrow-divider">↓</div>
+
+        <!-- Step 3 -->
+        <div class="step-card">
+          <div class="step-badge">3</div>
+          <div class="step-details">
+            <h4>Face Recognition</h4>
+            <p>Biometric facial landmark features are extracted and compared against registered student profile vectors stored in memory.</p>
+          </div>
+        </div>
+
+        <div class="down-arrow-divider">↓</div>
+
+        <!-- Step 4 -->
+        <div class="step-card">
+          <div class="step-badge">4</div>
+          <div class="step-details">
+            <h4>Student Identification</h4>
+            <p>The system verifies matching confidence thresholds and successfully identifies the exact student identity.</p>
+          </div>
+        </div>
+
+        <div class="down-arrow-divider">↓</div>
+
+        <!-- Step 5 -->
+        <div class="step-card">
+          <div class="step-badge">5</div>
+          <div class="step-details">
+            <h4>Attendance Recording</h4>
+            <p>The student status is updated to 'Present' with exact time logging in the central attendance database and dashboard.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- System Workflow Visual Diagram -->
+  <section class="section" style="background-color: #ffffff; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      <h2 class="section-title">System Workflow Diagram</h2>
+      <p class="section-subtitle">Visual architectural representation of data flow across system components.</p>
+
+      <div class="flow-container" style="max-width: 950px; margin: 0 auto;">
+        <div class="flow-step" style="border-top: 3px solid var(--primary-color);">
+          <div class="flow-step-title">📷 Camera</div>
+        </div>
+        <div class="flow-arrow">→</div>
+
+        <div class="flow-step" style="border-top: 3px solid var(--primary-color);">
+          <div class="flow-step-title">🔍 Face Detection</div>
+        </div>
+        <div class="flow-arrow">→</div>
+
+        <div class="flow-step" style="border-top: 3px solid var(--primary-color);">
+          <div class="flow-step-title">🧠 Face Recognition</div>
+        </div>
+        <div class="flow-arrow">→</div>
+
+        <div class="flow-step" style="border-top: 3px solid var(--primary-color);">
+          <div class="flow-step-title">👤 Student Identification</div>
+        </div>
+        <div class="flow-arrow">→</div>
+
+        <div class="flow-step" style="border-top: 3px solid var(--primary-color);">
+          <div class="flow-step-title">✅ Attendance Verification</div>
+        </div>
+        <div class="flow-arrow">→</div>
+
+        <div class="flow-step" style="border-top: 3px solid var(--primary-color);">
+          <div class="flow-step-title">💾 Database</div>
+        </div>
+        <div class="flow-arrow">→</div>
+
+        <div class="flow-step" style="border-top: 3px solid var(--primary-color);">
+          <div class="flow-step-title">📊 Attendance Dashboard</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits & Limitations -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-2">
+        <!-- Benefits Section -->
+        <div>
+          <h2 style="font-size: 1.4rem; color: var(--success-color); margin-bottom: 20px; display: flex; align-items: center; gap: 8px;">
+            <span>✨</span> System Benefits
+          </h2>
+          <div style="display: flex; flex-direction: column; gap: 14px;">
+            <div class="card" style="border-left: 4px solid var(--success-color);">
+              <h4 style="font-weight: 700; color: var(--text-main); margin-bottom: 4px;">Saves Classroom Time</h4>
+              <p class="card-text">Eliminates 10–15 minutes spent on verbal roll call in every lecture period.</p>
+            </div>
+            <div class="card" style="border-left: 4px solid var(--success-color);">
+              <h4 style="font-weight: 700; color: var(--text-main); margin-bottom: 4px;">Reduces Manual Work</h4>
+              <p class="card-text">Frees teachers from taking roll calls and compiling paper registers by hand.</p>
+            </div>
+            <div class="card" style="border-left: 4px solid var(--success-color);">
+              <h4 style="font-weight: 700; color: var(--text-main); margin-bottom: 4px;">Helps Reduce Proxy Attendance</h4>
+              <p class="card-text">Biometric facial matching ensures only physically present students are marked.</p>
+            </div>
+            <div class="card" style="border-left: 4px solid var(--success-color);">
+              <h4 style="font-weight: 700; color: var(--text-main); margin-bottom: 4px;">Reduces Recording Errors</h4>
+              <p class="card-text">Automated logging prevents miscounted roll numbers and misread register sheets.</p>
+            </div>
+            <div class="card" style="border-left: 4px solid var(--success-color);">
+              <h4 style="font-weight: 700; color: var(--text-main); margin-bottom: 4px;">Digital Attendance Records</h4>
+              <p class="card-text">Centralized database storage enables instant backup and fast search queries.</p>
+            </div>
+            <div class="card" style="border-left: 4px solid var(--success-color);">
+              <h4 style="font-weight: 700; color: var(--text-main); margin-bottom: 4px;">Easy Monitoring</h4>
+              <p class="card-text">Facilitates real-time attendance tracking for administrators and department heads.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Limitations Section -->
+        <div>
+          <h2 style="font-size: 1.4rem; color: var(--warning-color); margin-bottom: 20px; display: flex; align-items: center; gap: 8px;">
+            <span>⚠️</span> Current System Limitations
+          </h2>
+          <div style="display: flex; flex-direction: column; gap: 14px;">
+            <div class="card" style="border-left: 4px solid var(--warning-color);">
+              <h4 style="font-weight: 700; color: var(--text-main); margin-bottom: 4px;">Recognition Errors Can Occur</h4>
+              <p class="card-text">Extreme face angles, occlusions (masks/glasses), or motion blur may affect matching.</p>
+            </div>
+            <div class="card" style="border-left: 4px solid var(--warning-color);">
+              <h4 style="font-weight: 700; color: var(--text-main); margin-bottom: 4px;">Lighting Conditions Affect Detection</h4>
+              <p class="card-text">Poorly lit classrooms or direct harsh glare can reduce camera accuracy.</p>
+            </div>
+            <div class="card" style="border-left: 4px solid var(--warning-color);">
+              <h4 style="font-weight: 700; color: var(--text-main); margin-bottom: 4px;">Camera Infrastructure Required</h4>
+              <p class="card-text">High-resolution webcams or IP cameras must be mounted in each classroom.</p>
+            </div>
+            <div class="card" style="border-left: 4px solid var(--warning-color);">
+              <h4 style="font-weight: 700; color: var(--text-main); margin-bottom: 4px;">Privacy Must Be Considered</h4>
+              <p class="card-text">Student consent and ethical policies must be formulated regarding biometric data usage.</p>
+            </div>
+            <div class="card" style="border-left: 4px solid var(--warning-color);">
+              <h4 style="font-weight: 700; color: var(--text-main); margin-bottom: 4px;">Data Security is Important</h4>
+              <p class="card-text">Stored face templates require strong encryption to protect against unauthorized access.</p>
+            </div>
+            <div class="card" style="border-left: 4px solid var(--warning-color);">
+              <h4 style="font-weight: 700; color: var(--text-main); margin-bottom: 4px;">Initial Setup is Required</h4>
+              <p class="card-text">Enrolling all students and registering their initial photo vectors takes upfront time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Future Scope -->
+  <section class="section" style="background-color: var(--primary-light); border-top: 1px solid #bfdbfe;">
+    <div class="container">
+      <h2 class="section-title">Future Scope & Enhancements</h2>
+      <p class="section-subtitle">Potential advancements to further enhance system capabilities in future phases.</p>
+
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-icon">📱</div>
+          <h3 class="card-title">Mobile Application</h3>
+          <p class="card-text">Cross-platform mobile app for faculty to take quick snapshot attendance and view live class statistics.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">💬</div>
+          <h3 class="card-title">Parent Notifications</h3>
+          <p class="card-text">Automated SMS or email alerts dispatched to parents when a student is marked absent for two consecutive days.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">☁️</div>
+          <h3 class="card-title">Cloud Database Sync</h3>
+          <p class="card-text">Secure cloud integration allowing synchronized multi-department access across institutional campuses.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🏫</div>
+          <h3 class="card-title">Multiple Classroom Support</h3>
+          <p class="card-text">Centralized dashboard managing simultaneous IP camera streams across 50+ lecture halls in real-time.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">📊</div>
+          <h3 class="card-title">Advanced Attendance Analytics</h3>
+          <p class="card-text">Detailed graphical charts highlighting subject-wise attendance trends, monthly averages, and deficit lists.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🤖</div>
+          <h3 class="card-title">AI Attendance Prediction</h3>
+          <p class="card-text">Machine learning models predicting potential low-attendance students early in the term for timely intervention.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>
+        <strong>SYBCA Field Work Project</strong> | AI-Based Face Recognition Attendance System<br>
+        Department of Computer Applications — Savitribai Phule Pune University (SPPU)
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

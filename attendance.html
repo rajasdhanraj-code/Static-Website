@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance Dashboard | AI-Based Face Recognition Attendance System</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">🎓</div>
+        <div>
+          SmartAttend
+          <span class="brand-subtitle">SPPU SYBCA Field Work Project</span>
+        </div>
+      </a>
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle Navigation Menu">
+        ☰
+      </button>
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="problem.html" class="nav-link">Problem</a>
+        <a href="solution.html" class="nav-link">Solution</a>
+        <a href="attendance.html" class="nav-link active">Attendance</a>
+        <a href="about.html" class="nav-link">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <span class="page-header-badge">Interactive Prototype</span>
+      <h1 class="page-header-title">Attendance Dashboard</h1>
+      <p class="page-header-desc">
+        A front-end interactive demonstration showcasing real-time student attendance monitoring, search filtering, and record management.
+      </p>
+    </div>
+  </div>
+
+  <!-- Dashboard Main Container -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+
+      <!-- Disclaimer Alert Box -->
+      <div class="alert-box">
+        <div class="alert-icon">ℹ️</div>
+        <div class="alert-content">
+          <p>
+            <strong>Field Work Prototype Disclaimer:</strong> This attendance dashboard is a front-end demonstration/prototype created for the <strong>SPPU SYBCA Field Work project</strong>. It uses sample student data to demonstrate how an automated face recognition system interface functions. It is not connected to a live physical camera sensor.
+          </p>
+        </div>
+      </div>
+
+      <!-- Live Clock & Top Controls Header -->
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 12px;">
+        <h2 style="font-size: 1.3rem; font-weight: 700; color: var(--text-main);">
+          Live Class Session Summary
+        </h2>
+        <div class="datetime-display" id="current-datetime">
+          📅 Loading current date & time...
+        </div>
+      </div>
+
+      <!-- Statistics KPI Cards (Dynamically calculated by script.js) -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon total">👥</div>
+          <div>
+            <div class="stat-value" id="stat-total">10</div>
+            <div class="stat-label">Total Students</div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon present">✓</div>
+          <div>
+            <div class="stat-value" id="stat-present" style="color: var(--success-color);">6</div>
+            <div class="stat-label">Present</div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon absent">✕</div>
+          <div>
+            <div class="stat-value" id="stat-absent" style="color: var(--danger-color);">4</div>
+            <div class="stat-label">Absent</div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon rate">📈</div>
+          <div>
+            <div class="stat-value" id="stat-rate" style="color: var(--secondary-color);">60%</div>
+            <div class="stat-label">Attendance Rate</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls & Filter Toolbar -->
+      <div class="dashboard-controls">
+        <div class="search-box">
+          <span class="search-icon-inside">🔍</span>
+          <input 
+            type="text" 
+            id="search-input" 
+            class="search-input" 
+            placeholder="Search by student name or roll number..." 
+            aria-label="Search Students"
+          />
+        </div>
+
+        <div class="filter-box">
+          <select id="filter-select" aria-label="Filter Attendance Status">
+            <option value="all">All Students</option>
+            <option value="present">Present Only</option>
+            <option value="absent">Absent Only</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Student Attendance Table -->
+      <div class="table-container">
+        <table class="attendance-table">
+          <thead>
+            <tr>
+              <th>Roll No.</th>
+              <th>Student Name</th>
+              <th>Status</th>
+              <th>Time</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="attendance-table-body">
+            <!-- Table rows dynamically populated by script.js -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Dashboard Features Explanation -->
+      <div class="card" style="margin-top: 30px;">
+        <h3 class="card-title" style="font-size: 1.15rem; color: var(--primary-color);">
+          Dashboard Features Implemented
+        </h3>
+        <ul style="padding-left: 20px; list-style-type: disc; color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">
+          <li><strong>Real-time Search:</strong> Instantly filter student records by entering name characters or roll numbers.</li>
+          <li><strong>Status Filter:</strong> Select dropdown views to isolate 'Present' or 'Absent' student lists.</li>
+          <li><strong>Interactive Attendance Update:</strong> Click 'Mark Present' on any absent student to manually record their attendance timestamp.</li>
+          <li><strong>Dynamic Statistics Engine:</strong> Present/Absent totals and overall Attendance Percentage automatically re-calculate upon any status change.</li>
+          <li><strong>Instant Notification Toasts:</strong> Visual feedback popups confirm attendance record updates.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>
+        <strong>SYBCA Field Work Project</strong> | AI-Based Face Recognition Attendance System<br>
+        Department of Computer Applications — Savitribai Phule Pune University (SPPU)
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

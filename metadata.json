@@ -1,0 +1,6 @@
+{
+  "name": "AI-Based Face Recognition Attendance System",
+  "description": "SPPU SYBCA Field Work project studying IT solutions for social and educational issues.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
